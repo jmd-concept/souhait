@@ -23,36 +23,35 @@
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 </head>
 
-<body> <!--sm, md, lg, xl, 2xl-->
-    <div id="preload-image" class="">
+<body> <!--sm, md, lg, xl, 2xl--> <!--spin, ping, pulse, bounce-->
+    <div id="preload-image" class="animate-(--my-animation)">
         <img src="./assets/photos/effet2.gif" class="w-full h-full absolute top-0 right-0" />
         <p
-            class="absolute top-10 left-[25%] right-[25%] text-wrap text-white text-[40px] text-center font-bold xl:left-[35%] xl:text-7xl xl:top-12 xl:w-160 lg:top-20 lg:w-160 xl:text-[50px]">
+            class="animate-pulse absolute top-10 left-[25%] right-[25%] text-wrap text-white text-[40px] text-center font-bold xl:left-[35%] xl:text-7xl xl:top-12 xl:w-160 lg:top-20 lg:w-160 xl:text-[50px]">
             JMD <br />
             Concept vous souhait
         </p>
         <p
-            class="w-100 absolute top-110 left-[26%] right-[50%] text-white text-[108px] font-bold xl:left-[40%] xl:text-[180px] xl:top-110">
+            class="animate-pulse w-100 absolute italic top-160 left-[26%] right-[50%] text-white text-[108px] font-bold xl:left-[40%] xl:text-[140px] xl:top-145 lg:top-135">
             2026</p>
     </div>
 
     <section id="hidden"
-        class="hidden p-4 w-140 m-auto flex-col justify-center items-center gap-4 lg:flex-row xl:flex-row xl:pt-12 xl:gap-12 2xl:flex-row xl:w-240 2xl:w-250">
+        class="hidden p-4 w-140 m-auto flex-col justify-center items-center gap-4 md:flex-row lg:flex-row xl:flex-row xl:pt-10 xl:gap-10 2xl:flex-row xl:w-240 2xl:w-250">
 
-        <div class="rounded-xl bg-zinc-100 p-1 hover:bg-blue-900 focus:bg-blue-900">
-            <video src="./assets/jmd/jmd_boostage.mp4" autoplay preload="auto" loop
-                class="w-86 rounded-xl hover:bg-yellow-200 xl:w-100 lg:w-120"></video>
-            <!--autoplay preload="auto" loop-->
+        <div class="w-96 rounded-xl bg-zinc-100 p-1 hover:bg-blue-900 focus:bg-blue-900 md:w-296 xl:w-260 lg:w-290">
+            <video src="./assets/jmd/jmd_boostage.mp4" autoplay loop controls preload="auto"
+                class="w-96 rounded-xl hover:bg-yellow-200 xl:w-250 lg:w-260"></video>
         </div>
 
         <div
-            class="m-auto px-4 py-4 flex flex-col items-center bg-zinc-100 rounded-xl border-b-2 border-gray-50 xl:px-15 lg:px-15">
+            class="m-auto px-8 py-4 flex flex-col items-center bg-zinc-100 rounded-xl border-b-2 border-gray-50 xl:px-18 lg:px-20">
 
             <img src="./assets/photos/fleche2.png"
-                class="w-5 mt-2 m-auto animate-bounce bg-radial-[at_50%_20%] from-white to-white-900 to-5%" />
+                class="w-6 mt-2 m-auto animate-bounce bg-radial-[at_50%_20%] from-white to-white-900 to-5%" />
 
             <h2
-                class="p-3 w-full mb-3 text-gray-600 font-bold text-xl hover:text-blue-700 dark:hover:text-blue-600 text-center border-b border-gray-300">
+                class="p-3 w-full mb-3 text-gray-600 font-bold text-[2em] hover:text-blue-700 hover:animate-pulse dark:hover:text-blue-600 text-center border-b border-gray-300">
                 Contactez-nous
             </h2>
 
@@ -60,35 +59,36 @@
                 class="mt-4 p-4 w-82 m-auto border-2 border-blue-50 rounded-xl xl:w-full lg:w-full" target="_top">
                 <label> Votre nom :
                     <input type="text" name="name" id="nom" required
-                        class="ml-2 px-8 py-2 border-2 border-blue-100 rounded-xl">
+                        class="ml-2 px-10 py-2 border-2 border-blue-100 hover:border-blue-200 rounded-xl">
                 </label>
                 <br><br>
                 <label> Votre email :
                     <input type="email" name="_replyto" id="email" required
-                        class="ml-2 px-8 py-2 border-2 border-blue-100 rounded-xl">
+                        class="ml-2 px-10 py-2 border-2 border-blue-100 hover:border-blue-200 rounded-xl">
                 </label>
                 <br><br>
                 <label> Votre message :
                     <textarea name="message" id="message" rows="3" required
-                        class="ml-2 px-6 border-2 border-blue-100 rounded-xl xl:ml-2"></textarea>
+                        class="ml-2 px-12 border-2 border-blue-100 hover:border-blue-200  rounded-xl xl:ml-2"></textarea>
                 </label>
                 <br><br>
 
+                <!--Bloc les spams-->
                 <input type="text" name="_gotcha" style="display:none">
                 <button type="submit" class="py-1 px-[40%] text-white bg-blue-800 border-0 rounded-2xl">Envoyer</button>
             </form>
 
             <div class="mt-2 text-[28px] flex gap-8">
                 <a href="https://www.facebook.com/profile.php?id=61581381020725"
-                    class="p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                    class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
                     <i class=" fa fa-facebook" aria-hidden="true"></i>
                 </a>
                 <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7"
-                    class="p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                    class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
                 <a href="https://wa.me/243838120851"
-                    class="p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                    class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
             </div>
@@ -96,103 +96,7 @@
 
     </section>
 
-    <script>
-        /* paste this in verbatim */
-        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments); };
-
-        /* customize formbutton here*/
-        formbutton("create", {
-            action: "https://formspree.io/https://formspree.io/f/xaqywvok",
-            title: "Comment pouvons-nous vous aider?",
-            fields: [
-                {
-                    type: "email",
-                    label: "Email:",
-                    name: "email",
-                    required: true,
-                    placeholder: "example@email.com"
-                },
-                {
-                    type: "textarea",
-                    label: "Message:",
-                    name: "message",
-                    placeholder: "Que pensez-vous ?",
-                },
-                { type: "submit" }
-            ],
-            styles: {
-                title: {
-                    backgroundColor: "darkred"
-                },
-                fields: {
-                    borderBottom: "1px solid gray"
-                },
-                button: {
-                    color: "red",
-                    backgroundColor: "darkred"
-                }
-            },
-            initiallyVisible: true
-        });
-    </script>
-
-    <script>
-        const imageEvent = document.getElementById("preload-image")
-        const boxHidden = document.getElementById('hidden');
-
-        setTimeout(() => {
-            imageEvent.classList.add("hidden");
-            boxHidden.classList.remove("hidden");
-            boxHidden.classList.add("flex");
-        }, 8000);
-    </script>
-
-    <script>
-        const formulaire = document.getElementById('formulaire');
-        const nom = document.getElementById('nom');
-        const email = document.getElementById('email');
-        const message = document.getElementById('message');
-
-        // Version 1 : Réinitialisation après soumission
-        /*    formulaire.addEventListener('submit', function (e) {
-               // Le formulaire sera envoyé normalement à Formspree
-               // Après l'envoi, on peut réinitialiser les champs
-               setTimeout(() => {
-                   nom.value = "";
-                   email.value = "";
-                   message.value = "";
-   
-                   // Optionnel : Afficher un message de confirmation
-                   alert('Merci ! Votre message a été envoyé avec succès.');
-               }, 100);
-           }); */
-
-        // Version alternative : Avec prévention d'envoi pour traitement supplémentaire
-        formulaire.addEventListener('submit', function (e) {
-            e.preventDefault(); // Empêche l'envoi immédiat
-
-            // Ici vous pouvez ajouter une validation supplémentaire
-            if (nom.value.trim() === '' || email.value.trim() === '' || message.value.trim() === '') {
-                alert('Veuillez remplir tous les champs obligatoires.');
-                return;
-            }
-
-            // Validation d'email basique
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email.value)) {
-                alert('Veuillez entrer une adresse email valide.');
-                return;
-            }
-
-            // Si tout est valide, on soumet le formulaire
-            this.submit();
-
-            // Réinitialisation après envoi
-            nom.value = "";
-            email.value = "";
-            message.value = "";
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
