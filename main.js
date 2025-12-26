@@ -6,7 +6,7 @@ setTimeout(() => {
     imageEvent.classList.add("hidden");
     boxHidden.classList.remove("hidden");
     boxHidden.classList.add("flex");
-}, 100);
+}, 8000);
 
 const formulaire = document.getElementById('formulaire');
 const nom = document.getElementById('nom');
