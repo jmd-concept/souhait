@@ -23,81 +23,130 @@
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 </head>
 
-<body> <!--sm, md, lg, xl, 2xl--> <!--spin, ping, pulse, bounce-->
-    <div id="preload-image" class="animate-(--my-animation)">
-        <img src="./assets/photos/effet2.gif" class="w-full h-full absolute top-0 right-0" />
+<body>
+
+    <div id="preload-image-1" class="">
+        <img src="./assets/photos/countdown.gif" alt="count down" class="w-full h-full fixed top-0 right-0 z-10" />
+    </div>
+
+    <div id="preload-image-2" class="hidden animate-(--my-animation)">
+        <img src="./assets/photos/effet2.gif" alt="effet" class="w-full h-full fixed top-0 right-0 z-1" />
         <p
-            class="animate-pulse absolute top-10 left-[25%] right-[25%] text-wrap text-white text-[40px] text-center font-bold xl:left-[35%] xl:text-7xl xl:top-12 xl:w-160 lg:top-20 lg:w-160 xl:text-[50px]">
+            class="animate-pulse fixed top-25 left-[25%] right-[25%] text-wrap text-white text-[40px] text-center font-bold xl:left-[35%] xl:text-7xl xl:top-12 xl:w-160 lg:top-20 lg:w-160 xl:text-[50px] z-1">
             JMD <br />
             Concept vous souhait
         </p>
         <p
-            class="animate-pulse w-100 absolute italic top-160 left-[26%] right-[50%] text-white text-[108px] font-bold xl:left-[40%] xl:text-[140px] xl:top-145 lg:top-135">
+            class="animate-pulse w-100 fixed italic top-150 left-[26%] right-[50%] text-white text-[108px] font-bold xl:left-[40%] xl:text-[140px] xl:top-145 lg:top-135 z-1">
             2026</p>
     </div>
 
-    <section id="hidden"
-        class="hidden p-4 w-140 m-auto flex-col justify-center items-center gap-4 md:flex-row lg:flex-row xl:flex-row xl:pt-10 xl:gap-10 2xl:flex-row xl:w-240 2xl:w-250">
+    <div id="hidden" class="h-full bg-gray-900 py-24 sm:py-32">
 
-        <div class="w-96 rounded-xl bg-zinc-100 p-1 hover:bg-blue-900 focus:bg-blue-900 md:w-296 xl:w-260 lg:w-290">
+        <img src="./assets/photos/bouls.png" alt="🔵 boule"
+            class="fixed w-56 bottom-2 left-1 xl:left-8 xl:w-100 xl:bottom-10" />
+        <img src="./assets/photos/etoile.png" alt="⭐ étoile"
+            class="absolute w-40 top-10 right-6 xl:right-20 xl:top-18 xl:w-60" />
+        <div class="bg-gray-900 absolute w-16 h-16 right-0 top-0 xl:w-40 xl:h-20"></div>
 
-            <video autoplay loop controls class="w-96 rounded-xl hover:bg-yellow-200 xl:w-250 lg:w-260">
-                <source src="./assets/jmd/jmd_boostage.mp4" type="video/mp4">
-                Services de JMD Concept
-            </video>
-        </div>
+        <div class=" mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
 
-        <div
-            class="m-auto px-8 py-4 flex flex-col items-center bg-zinc-100 rounded-xl border-b-2 border-gray-50 xl:px-18 lg:px-20">
+            <div class="pl-2 max-w-xl">
+                <div class="flex items-center gap-6">
+                    <img src="./assets/photos/logo-jmd-noir.jpg" alt="logo jmd concept" class="rounded-full w-20" />
+                    <h2 class="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">
+                        JMD Concept
+                    </h2>
+                </div>
 
-            <img src="./assets/photos/fleche2.png"
-                class="w-6 mt-2 m-auto animate-bounce bg-radial-[at_50%_20%] from-white to-white-900 to-5%" />
-
-            <h2
-                class="p-3 w-full mb-3 text-gray-600 font-bold text-[2em] hover:text-blue-700 hover:animate-pulse dark:hover:text-blue-600 text-center border-b border-gray-300">
-                Contactez-nous
-            </h2>
-
-            <form action="https://formspree.io/f/xaqywvok" method="POST" id="formulaire"
-                class="mt-4 p-4 w-82 m-auto border-2 border-blue-50 rounded-xl xl:w-full lg:w-full" target="_top">
-                <label> Votre nom :
-                    <input type="text" name="name" id="nom" required
-                        class="ml-2 px-10 py-2 border-2 border-blue-100 hover:border-blue-200 rounded-xl">
-                </label>
-                <br><br>
-                <label> Votre email :
-                    <input type="email" name="_replyto" id="email" required
-                        class="ml-2 px-10 py-2 border-2 border-blue-100 hover:border-blue-200 rounded-xl">
-                </label>
-                <br><br>
-                <label> Votre message :
-                    <textarea name="message" id="message" rows="3" required
-                        class="ml-2 px-12 border-2 border-blue-100 hover:border-blue-200  rounded-xl xl:ml-2"></textarea>
-                </label>
-                <br><br>
-
-                <!--Bloc les spams-->
-                <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="py-1 px-[40%] text-white bg-blue-800 border-0 rounded-2xl">Envoyer</button>
-            </form>
-
-            <div class="mt-2 text-[28px] flex gap-8">
-                <a href="https://www.facebook.com/profile.php?id=61581381020725"
-                    class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
-                    <i class=" fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7"
-                    class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="https://wa.me/243838120851"
-                    class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                </a>
+                <p class="mt-6 text-lg/8 text-gray-200">
+                    JMD Concept est une agence de communication innovante, spécialisée dans la création de contenus
+                    digitaux, le développement de sites et application web, ainsi que dans la conception de base de
+                    données, etc.
+                </p>
+                <p class="mt-6 text-lg/8 text-gray-300">
+                    Avec JMD Concept Transformez vos données en véritable valeur, structurez vos idées, organisez vos
+                    données et obtenez une gestion efficase de vos informations.
+                </p>
+                <p class="mt-6 text-lg/8 text-gray-400">
+                    L'inovation au service de votre visibilité
+                    <br />👉
+                    <a href="https://jmd-concept.github.io/jmd-portfolio/"
+                        class="mt-8 text-blue-400 text-[12px] underline">Visitez le site de
+                        JMD
+                        Concept</a>
+                </p>
             </div>
+
+            <div role="list" class="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <div class="m-auto">
+                    <video autoplay loop controls class="w-96 rounded-xl hover:bg-yellow-200 xl:w-250 lg:w-260">
+                        <source src="./assets/jmd/jmd_boostage.mp4" type="video/mp4">
+                        Services de JMD Concept
+                    </video>
+                </div>
+
+                <div
+                    class="m-auto px-8 py-4 flex flex-col items-center bg-zinc-100 rounded-xl border-b-2 border-gray-50 xl:px-18 lg:px-20">
+
+                    <img src="./assets/photos/fleche2.png"
+                        class="w-6 mt-2 m-auto animate-bounce bg-radial-[at_50%_20%] from-white to-white-900 to-5%" />
+
+                    <h2
+                        class="p-3 w-full mb-3 text-gray-600 font-bold text-[2em] hover:text-blue-700 hover:animate-pulse dark:hover:text-blue-600 text-center border-b border-gray-300">
+                        Contactez-nous
+                    </h2>
+
+                    <form action="https://formspree.io/f/xaqywvok" method="POST" id="formulaire"
+                        class="mt-4 p-4 w-82 m-auto border-2 border-blue-50 rounded-xl xl:w-full lg:w-full"
+                        target="_top">
+                        <label> Votre nom :
+                            <input type="text" name="name" id="nom" required
+                                class="ml-2 px-10 py-2 border-2 border-blue-100 hover:border-blue-200 rounded-xl">
+                        </label>
+                        <br><br>
+                        <label> Votre email :
+                            <input type="email" name="_replyto" id="email" required
+                                class="ml-2 px-10 py-2 border-2 border-blue-100 hover:border-blue-200 rounded-xl">
+                        </label>
+                        <br><br>
+                        <label> Votre message :
+                            <textarea name="message" id="message" rows="3" required
+                                class="ml-2 px-12 border-2 border-blue-100 hover:border-blue-200  rounded-xl xl:ml-2"></textarea>
+                        </label>
+                        <br><br>
+
+                        <!--Bloc les spams-->
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit"
+                            class="py-2 px-[40%] text-white text-[14px] font-bold bg-blue-800 border-0 rounded-2xl">Envoyer</button>
+                    </form>
+
+                    <div class="mt-2 text-[28px] flex gap-8">
+                        <a href="https://jmd-concept.github.io/jmd-portfolio/"
+                            class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                            <i class=" fa fa-globe" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61581381020725"
+                            class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                            <i class=" fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7"
+                            class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/243838120851"
+                            class="hover:animate-pulse p-2 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white rounded-full">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
 
     <script src="./main.js"></script>
 </body>

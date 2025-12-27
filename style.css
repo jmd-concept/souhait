@@ -12,9 +12,7 @@
  } */
 
  body {
-     padding: 2px;
      height: 100vh;
-     background: url('./assets/photos/newyear.jpg') no-repeat center center/cover;
  }
 
  @media (max-width: 962px) {

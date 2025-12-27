@@ -1,12 +1,20 @@
 
-const imageEvent = document.getElementById("preload-image")
+const imageEvent1 = document.getElementById("preload-image-1")
+const imageEvent2 = document.getElementById("preload-image-2")
 const boxHidden = document.getElementById('hidden');
 
 setTimeout(() => {
-    imageEvent.classList.add("hidden");
-    boxHidden.classList.remove("hidden");
-    boxHidden.classList.add("flex");
-}, 8000);
+    imageEvent1.classList.add("hidden");
+    imageEvent2.classList.remove("hidden");
+
+    if (imageEvent1) {
+        setTimeout(() => {
+            imageEvent2.classList.add("hidden");
+            boxHidden.classList.remove("hidden");
+            boxHidden.classList.add("flex");
+        }, 8000);
+    }
+}, 5000);
 
 const formulaire = document.getElementById('formulaire');
 const nom = document.getElementById('nom');
