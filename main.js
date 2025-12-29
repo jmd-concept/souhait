@@ -14,7 +14,7 @@ setTimeout(() => {
             boxHidden.classList.add("flex");
         }, 8000);
     }
-}, 5 * 1000);
+}, 4 * 1000);
 
 const formulaire = document.getElementById('formulaire');
 const nom = document.getElementById('nom');
